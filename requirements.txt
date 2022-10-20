@@ -5,6 +5,7 @@ beautifulsoup4==4.11.1
 certifi==2022.9.24
 cffi==1.15.1
 charset-normalizer==2.1.1
+cipher==0.1
 cryptography==38.0.1
 h11==0.14.0
 idna==3.4
