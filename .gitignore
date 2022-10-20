@@ -3,3 +3,5 @@
 .env
 designs
 version control
+chromedriver_win32.zip
+auto_version_control.py

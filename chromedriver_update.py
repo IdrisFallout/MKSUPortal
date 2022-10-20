@@ -73,14 +73,14 @@ def get_chrome_version():
 
 def compare_versions():
     try:
-        driver_version = subprocess.check_output("chromedriver.exe --version").decode('utf-8').strip().split(" ")[1]
         chrome_version = str(get_chrome_version())
-        if int(driver_version.split(".")[0]) == int(chrome_version.split(".")[0]):
-            print("No need to update your chromedriver")
+        try:
+            driver_version = subprocess.check_output("chromedriver.exe --version").decode('utf-8').strip().split(" ")[1]
+        except:
+            return "UPDATE", int(chrome_version.split(".")[0])
+        if int(driver_version.split(".")[0]) != int(chrome_version.split(".")[0]):
+            return "UPDATE", int(chrome_version.split(".")[0])
         else:
-            print("please update your chromedriver")
+            return "MAINTAIN"
     except:
         pass
-
-
-compare_versions()
