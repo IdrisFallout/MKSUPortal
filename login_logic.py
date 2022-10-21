@@ -28,6 +28,8 @@ def initialize_selenium():
         options.add_argument("--disable-javascript")
         driver = webdriver.Chrome(service=driver_service, options=options)
         driver.set_page_load_timeout(15)
+        with open('portal.txt', 'w') as f:
+            f.write("SUCCESS: driver initialize successfully")
         return driver
     except:
         output, chrome_version = compare_versions()

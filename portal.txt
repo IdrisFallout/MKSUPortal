@@ -1,1 +1,1 @@
-j17-5574-2020
+SUCCESS: driver initialize successfully
