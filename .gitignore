@@ -7,3 +7,4 @@ chromedriver_win32.zip
 auto_version_control.py
 portal.txt
 build
+.original_env
