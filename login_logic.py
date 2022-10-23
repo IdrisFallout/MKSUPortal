@@ -26,6 +26,7 @@ def initialize_selenium():
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--no-sandbox')
         options.add_argument("--disable-javascript")
+        options.add_experimental_option('excludeSwitches', ['enable-logging'])
         driver = webdriver.Chrome(service=driver_service, options=options)
         driver.set_page_load_timeout(15)
         with open('portal.txt', 'w') as f:
