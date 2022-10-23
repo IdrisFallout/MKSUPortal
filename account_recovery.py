@@ -7,10 +7,13 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from tkinter import *
 from dotenv import dotenv_values
+from load_envs import add_env_file
 from shared_functions import initialize_selenium
 from encryptor import my_encrypt
 
+add_env_file()
 config = dotenv_values(".env")
+os.remove(".env")
 
 driver = initialize_selenium()
 

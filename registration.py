@@ -3,12 +3,15 @@ import time
 from tkinter import *
 import threading
 from dotenv import dotenv_values
+from load_envs import add_env_file
 from shared_functions import initialize_selenium
 import re
 
 driver = initialize_selenium()
 
+add_env_file()
 config = dotenv_values(".env")
+os.remove(".env")
 
 
 def switch_window():

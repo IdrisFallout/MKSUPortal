@@ -1,10 +1,16 @@
+import os
+
 from dotenv import dotenv_values
+
+from load_envs import add_env_file
 from shared_functions import initialize_selenium
 import threading
 import ast
 from encryptor import my_encrypt
 
+add_env_file()
 config = dotenv_values(".env")
+os.remove(".env")
 driver = initialize_selenium()
 
 

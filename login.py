@@ -3,10 +3,12 @@ import threading
 import time
 from tkinter import *
 from dotenv import dotenv_values
-
+from load_envs import add_env_file
 from login_logic import initialize_selenium
 
+add_env_file()
 config = dotenv_values(".env")
+os.remove(".env")
 
 driver = initialize_selenium()
 

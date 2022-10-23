@@ -6,11 +6,14 @@ from tkinter import ttk
 from tkcalendar import DateEntry
 from datetime import date
 from dotenv import dotenv_values
+from load_envs import add_env_file
 from shared_functions import initialize_selenium
 from tkinter import messagebox
 import re
 
+add_env_file()
 config = dotenv_values(".env")
+os.remove(".env")
 
 driver = initialize_selenium()
 

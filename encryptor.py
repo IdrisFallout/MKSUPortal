@@ -1,11 +1,9 @@
-import json
-import binascii
-from Crypto.Cipher import AES
-from Crypto import Random
 import base64
-from dotenv import dotenv_values
+import binascii
+import json
 
-config = dotenv_values(".env")
+from Crypto import Random
+from Crypto.Cipher import AES
 
 
 def my_encrypt(data, passphrase):
