@@ -6,7 +6,6 @@ from dotenv import dotenv_values
 from shared_functions import initialize_selenium
 import re
 
-
 driver = initialize_selenium()
 
 config = dotenv_values(".env")
@@ -180,7 +179,8 @@ def error_animation(error_widget):
     try:
         t = 0
         while t < 0.5:
-            error_widget.place_configure(y=int(error_widget.place_info()["y"]) + ((abs(error_animation.feedback_height) * 2) * 0.2))
+            error_widget.place_configure(
+                y=int(error_widget.place_info()["y"]) + ((abs(error_animation.feedback_height) * 2) * 0.2))
             time.sleep(0.1)
             t += 0.1
         else:
@@ -192,7 +192,8 @@ def error_animation(error_widget):
                 pass
 
             while error_animation.t > 0:
-                error_widget.place_configure(y=int(error_widget.place_info()["y"]) - ((abs(error_animation.feedback_height) * 2) * 0.2))
+                error_widget.place_configure(
+                    y=int(error_widget.place_info()["y"]) - ((abs(error_animation.feedback_height) * 2) * 0.2))
                 time.sleep(0.1)
                 error_animation.t -= 0.1
             error_widget.place_configure(y=error_animation.feedback_height)
@@ -210,7 +211,10 @@ def kill_threads():
     error_animation.sleep = 0.1
     error_animation.t = -5
     root.destroy()
-    driver.quit()
+    try:
+        driver.quit()
+    except:
+        pass
 
 
 root = Tk()
@@ -308,7 +312,6 @@ password_confirm_entry.place(
     height=30)
 
 password_confirm_entry.bind("<Return>", try_to_submit_logins)
-
 
 submit_img = PhotoImage(file=f"images/registration/img0.png")
 submit_btn = Button(
@@ -439,7 +442,6 @@ admission_format_error_lbl.place(x=width / 2, y=-50, anchor=CENTER)
 employee_format_error_img = PhotoImage(file="images/registration/employee-format-error.png")
 employee_format_error_lbl = Label(canvas, image=employee_format_error_img)
 employee_format_error_lbl.place(x=width / 2, y=-50, anchor=CENTER)
-
 
 root.resizable(False, False)
 

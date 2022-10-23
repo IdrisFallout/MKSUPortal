@@ -1,4 +1,5 @@
 import os
+import sys
 import threading
 import time
 import webbrowser
@@ -24,30 +25,23 @@ splash.configure(bg="#ffffff")
 
 def kill_splash():
     state = True
-    count = 0
     while state:
         with open('portal.txt', 'r') as f:
             feedback = f.read()
         if feedback.split(":")[0] == 'SUCCESS':
-            if count == 0:
-                state = False
-                count = 1
-            else:
-                break
+            state = False
     else:
         splash.destroy()
-        exit()
-        exit()
+        return
 
 
 def switch_window():
     os.system('python login.py')
-    exit()
-    exit()
 
 
 def go_to_login():
     threading.Thread(target=switch_window).start()
+    kill_splash()
 
 
 canvas = Canvas(splash, bg="#ffffff", height=363, width=606, bd=0, highlightthickness=0, relief="ridge")
@@ -69,6 +63,6 @@ b1.place(x=15, y=333, width=86, height=17)
 
 splash.resizable(False, False)
 
-threading.Thread(target=kill_splash).start()
+# threading.Thread(target=kill_splash).start()
 splash.after(3000, go_to_login)
-mainloop()
+splash.mainloop()

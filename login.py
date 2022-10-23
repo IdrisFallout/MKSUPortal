@@ -180,7 +180,10 @@ def kill_threads():
     error_animation.sleep = 0.1
     error_animation.t = -5
     root.destroy()
-    driver.quit()
+    try:
+        driver.quit()
+    except:
+        pass
 
 
 root = Tk()

@@ -157,10 +157,15 @@ def go_to_login():
 
 
 def kill_threads():
-    MsgBox = messagebox.askquestion('Exit Application', 'Are you sure you want to exit the application without saving the changes', icon='warning')
+    MsgBox = messagebox.askquestion('Exit Application',
+                                    'Are you sure you want to exit the application without saving the changes',
+                                    icon='warning')
     if MsgBox == 'yes':
         root.destroy()
-        driver.quit()
+        try:
+            driver.quit()
+        except:
+            pass
     else:
         return
 

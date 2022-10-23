@@ -85,7 +85,8 @@ def reset_password():
                     the_email = get_email(username_entry.get())
                     the_username = get_username(username_entry.get())
                     result = send_email(receiver=the_email,
-                                        ulr_link=f"{config['RESET_PASSWORD_URL']}id={my_encrypt(the_email, config['SECRET_KEY']).decode('utf-8')}", username=the_username)
+                                        ulr_link=f"{config['RESET_PASSWORD_URL']}id={my_encrypt(the_email, config['SECRET_KEY']).decode('utf-8')}",
+                                        username=the_username)
                     verification_email.configure(text=f"({the_email}).")
                     email_address = f"({the_email})."
                 else:
@@ -168,7 +169,10 @@ def kill_threads():
     error_animation.sleep = 0.1
     error_animation.t = -5
     root.destroy()
-    driver.quit()
+    try:
+        driver.quit()
+    except:
+        pass
 
 
 def send_email(receiver=None, ulr_link=None, username=None):
@@ -247,6 +251,7 @@ def get_username(admission):
     html = driver.execute_script("return document.body.innerHTML;")
     return html
 
+
 def get_email(admission):
     try:
         url = f"{config['URL']}operation=get-email&admission={admission.lower()}"
@@ -255,8 +260,6 @@ def get_email(admission):
         return html
     except:
         pass
-
-
 
 
 root = Tk()

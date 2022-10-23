@@ -72,7 +72,6 @@ def display_feedback(widget):
         pass
 
 
-
 # ------------------------------------------------------------------------------
 error_animation.sleep = 2
 error_animation.t = 0.5
@@ -138,8 +137,6 @@ with open('portal.txt', 'r') as f:
 verification_email = Label(feedback_frame, text=username, font=("", 13, "bold"), bg="#2C6B46",
                            fg="#87BD9D")
 verification_email.place(relx=0.15, rely=0.7)
-
-
 
 error_animation.t = 0.5
 error_animation.feedback_height = -78
