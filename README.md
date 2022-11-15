@@ -15,6 +15,17 @@ After the splash screen, you are then greeted with the login form below
 
 ![LOGIN...](screenshots/login.png?raw=true "Optional Title")
 
+Here you are required login with your student id or staff id as suggested in the textbox entries.
+You are required to create an account if you don't have any.
+Here is [sign-up](#step-3) form
+
+## Step 3
+One is required to create a student or a staff account in case they don't have.
+Ensure you remember your credentials inorder to avoid reseting your password whenever you try loging in.
+
+![SIGN-UP...](screenshots/sign-up.png?raw=true "Optional Title")
+
+
 # Requirements
 
 [splash-screen]: splash_screen.py
