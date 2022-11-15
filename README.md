@@ -5,10 +5,10 @@
 When you begin the project, you are required to run the [SplashScreen][splash-screen] first.
 The scripts handles the following:-
     -  Ensures you have connection to the internet before proceeding
-    -  It ensures you have the latest software requirements to use this application(See [here](#how-to-use))
+    -  It ensures you have the latest software requirements to use this application(See [here](#requirements))
 
 ![SPLASH...](screenshots/splash.png?raw=true "Optional Title")
 
-
+# Requirements
 
 [splash-screen]: splash_screen.py
