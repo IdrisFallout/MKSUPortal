@@ -3,7 +3,7 @@
 
 # How To Use
 When you begin the project, you are required to run the [SplashScreen][splash-screen] first.<br>
-The application comes with various controls for:
+The scripts handles the following:
 - Ensures you have connection to the internet before proceeding
 - It ensures you have the latest software requirements to use this application(See [here](#requirements))
 
