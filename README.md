@@ -15,7 +15,7 @@ After the splash screen, you are then greeted with the login form below
 
 ![LOGIN...](screenshots/login.png?raw=true "Optional Title")
 
-Here you are required login with your student id or staff id as suggested in the textbox entries.
+Here you are required login with your student id or staff id as suggested in the textbox entries.<br>
 You are required to create an account if you don't have any.
 Here is [sign-up](#step-3) form
 
