@@ -20,7 +20,7 @@ You are required to create an account if you don't have any.
 Here is [sign-up](#step-3) form
 
 ## Step 3
-One is required to create a student or a staff account in case they don't have.
+One is required to create a student or a staff account in case they don't have.<br>
 Ensure you remember your credentials inorder to avoid reseting your password whenever you try loging in.
 
 ![SIGN-UP...](screenshots/sign-up.png?raw=true "Optional Title")
