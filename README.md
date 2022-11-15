@@ -35,8 +35,20 @@ You are required to click the reset button in the received email then you'll be 
 > You can also change your password after you login to the [Portal's Dashboard](#step-5)
 
 ## Step 5
+### DASHBOARD
+These is the place where the user manages all their details including:
+- Fees
+- Reporting
+- Account profile
+- Messages
+- Units, Examination and Deferment
+- Clearance
+- Evaluation e.t.c.
 
+> **Note** 
+> It is actually the portal
 
+![DASHBOARD...](screenshots/dashboard.png?raw=true "Optional Title")
 
 # Requirements
 
