@@ -28,7 +28,9 @@ Ensure you remember your credentials inorder to avoid [resetting your password](
 ## Step 4
 The way to reset your password if forgot is quite simple. You are required to provide your admission number and wait for a reset email to be sent to your account email address.<br>
 You are required to click the reset button in the received email then you'll be redirected to a webpage where you'll input your new password.<br>
+
 ![RESET...](screenshots/reset.png?raw=true "Optional Title")
+
 > **Note** 
 > You can also change your password after you login to the [Portal's Dashboard](#step-5)
 
