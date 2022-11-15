@@ -1,2 +1,2 @@
 # MKSUPortal
-a clone of my uni portal
+### The project is a clone of my University School Portal
