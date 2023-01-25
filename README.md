@@ -51,7 +51,11 @@ These is the place where the user manages all their details including:
 ![DASHBOARD...](screenshots/dashboard.png?raw=true "Optional Title")
 
 # Requirements
-To setup the project run `pip install -r requirements.txt`
+Clone the project with git: `git clone https://github.com/IdrisFallout/MKSUPortal.git`
+To setup the project(intall all dependencies) run `pip install -r requirements.txt`
+Ensure you have a chrome web-browser installed in your system(the project makes use of selenium)
+Make sure you set the environment variables properly at [.env](.env)
+To start the application run python [splash_screen.py](splash_screen.py)
 
 
 [splash-screen]: splash_screen.py
