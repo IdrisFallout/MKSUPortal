@@ -52,7 +52,7 @@ These is the place where the user manages all their details including:
 
 # Requirements
 - Clone the project with git: `git clone https://github.com/IdrisFallout/MKSUPortal.git`<br>
-- To setup the project(intall all dependencies) run `pip install -r requirements.txt`<br>
+- To setup the project(install all dependencies) run `pip install -r requirements.txt`<br>
 - Ensure you have a chrome web-browser installed in your system(the project makes use of selenium)<br>
 - Make sure you set the environment variables properly at [.env](.env)<br>
 - To start the application run python [splash_screen.py](splash_screen.py)<br>
