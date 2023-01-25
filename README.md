@@ -51,5 +51,7 @@ These is the place where the user manages all their details including:
 ![DASHBOARD...](screenshots/dashboard.png?raw=true "Optional Title")
 
 # Requirements
+To setup the project run `pip install -r requirements.txt`
+
 
 [splash-screen]: splash_screen.py
